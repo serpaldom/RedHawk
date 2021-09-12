@@ -1,0 +1,13 @@
+{
+    "cms_id": "joom",
+    "cms_name": "joomla",
+    "cms_url": "https://joomla.org",
+    "detection_param": "header",
+    "joomla_backup_files": "http://fentresssoil.com/administrator,",
+    "joomla_debug_mode": "disabled",
+    "joomla_readme_file": "http://fentresssoil.com/README.txt",
+    "joomla_version": "3.10.1",
+    "last_scanned": "2021-08-30 10:27:48.813872",
+    "url": "http://fentresssoil.com/",
+    "vulnerabilities_count": "0"
+}

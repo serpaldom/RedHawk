@@ -1,0 +1,498 @@
+{
+  "banner": {
+    "description": "WordPress Security Scanner by the WPScan Team",
+    "version": "3.8.17",
+    "authors": [
+      "@_WPScan_",
+      "@ethicalhack3r",
+      "@erwan_lr",
+      "@firefart"
+    ],
+    "sponsor": "Sponsored by Automattic - https://automattic.com/"
+  },
+  "start_time": 1630407801,
+  "start_memory": 49291264,
+  "target_url": "http://www.epes.es/",
+  "target_ip": "217.12.30.33",
+  "effective_url": "http://www.epes.es/",
+  "interesting_findings": [
+    {
+      "url": "http://www.epes.es/",
+      "to_s": "Headers",
+      "type": "headers",
+      "found_by": "Headers (Passive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+        "Server: Apache",
+        "Proxy-Connection: Keep-Alive"
+      ]
+    },
+    {
+      "url": "http://www.epes.es/robots.txt",
+      "to_s": "robots.txt found: http://www.epes.es/robots.txt",
+      "type": "robots_txt",
+      "found_by": "Robots Txt (Aggressive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+
+      ]
+    },
+    {
+      "url": "http://www.epes.es/xmlrpc.php",
+      "to_s": "XML-RPC seems to be enabled: http://www.epes.es/xmlrpc.php",
+      "type": "xmlrpc",
+      "found_by": "Link Tag (Passive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+        "Direct Access (Aggressive Detection)": {
+          "confidence": 100
+        }
+      },
+      "references": {
+        "url": [
+          "http://codex.wordpress.org/XML-RPC_Pingback_API"
+        ],
+        "metasploit": [
+          "auxiliary/scanner/http/wordpress_ghost_scanner",
+          "auxiliary/dos/http/wordpress_xmlrpc_dos",
+          "auxiliary/scanner/http/wordpress_xmlrpc_login",
+          "auxiliary/scanner/http/wordpress_pingback_access"
+        ]
+      },
+      "interesting_entries": [
+
+      ]
+    },
+    {
+      "url": "http://www.epes.es/readme.html",
+      "to_s": "WordPress readme found: http://www.epes.es/readme.html",
+      "type": "readme",
+      "found_by": "Direct Access (Aggressive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+
+      ]
+    },
+    {
+      "url": "http://www.epes.es/wp-content/debug.log",
+      "to_s": "Debug Log found: http://www.epes.es/wp-content/debug.log",
+      "type": "debug_log",
+      "found_by": "Direct Access (Aggressive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+        "url": [
+          "https://codex.wordpress.org/Debugging_in_WordPress"
+        ]
+      },
+      "interesting_entries": [
+
+      ]
+    },
+    {
+      "url": "http://www.epes.es/wp-cron.php",
+      "to_s": "The external WP-Cron seems to be enabled: http://www.epes.es/wp-cron.php",
+      "type": "wp_cron",
+      "found_by": "Direct Access (Aggressive Detection)",
+      "confidence": 60,
+      "confirmed_by": {
+
+      },
+      "references": {
+        "url": [
+          "https://www.iplocation.net/defend-wordpress-from-ddos",
+          "https://github.com/wpscanteam/wpscan/issues/1299"
+        ]
+      },
+      "interesting_entries": [
+
+      ]
+    }
+  ],
+  "version": {
+    "number": "5.1.1",
+    "release_date": "2019-03-13",
+    "status": "insecure",
+    "found_by": "Rss Generator (Passive Detection)",
+    "confidence": 100,
+    "interesting_entries": [
+      "http://www.epes.es/?feed=rss2, <generator>https://wordpress.org/?v=5.1.1</generator>"
+    ],
+    "confirmed_by": {
+      "Emoji Settings (Passive Detection)": {
+        "confidence": 60,
+        "interesting_entries": [
+          "http://www.epes.es/, Match: 'wp-includes\\/js\\/wp-emoji-release.min.js?ver=5.1.1'"
+        ]
+      }
+    },
+    "vulnerabilities": [
+
+    ]
+  },
+  "main_theme": {
+    "slug": "ultimatum",
+    "location": "http://www.epes.es/wp-content/themes/ultimatum/",
+    "latest_version": null,
+    "last_updated": null,
+    "outdated": false,
+    "readme_url": false,
+    "directory_listing": false,
+    "error_log_url": null,
+    "style_url": "http://www.epes.es/wp-content/themes/ultimatum/style.css",
+    "style_name": "Ultimatum",
+    "style_uri": null,
+    "description": "Ultimatum is a drag and drop Framework. We suggest using Child Themes with it.",
+    "author": "<a href=\"https://ultimatumtheme.com\">Ultimatum Theme</a>",
+    "author_uri": "https://ultimatumtheme.com",
+    "template": null,
+    "license": "GNU General Public License v2 or later",
+    "license_uri": "http://www.gnu.org/licenses/gpl-2.0.html",
+    "tags": "buddypress,full-customizable,translation-ready",
+    "text_domain": "ultimatum",
+    "found_by": "Urls In Homepage (Passive Detection)",
+    "confidence": 6,
+    "interesting_entries": [
+
+    ],
+    "confirmed_by": {
+
+    },
+    "vulnerabilities": [
+
+    ],
+    "version": {
+      "number": "2.9.1.1",
+      "confidence": 80,
+      "found_by": "Style (Passive Detection)",
+      "interesting_entries": [
+        "http://www.epes.es/wp-content/themes/ultimatum/style.css, Match: 'Version: 2.9.1.1'"
+      ],
+      "confirmed_by": {
+
+      }
+    },
+    "parents": [
+
+    ]
+  },
+  "plugins": {
+    "cred-frontend-editor": {
+      "slug": "cred-frontend-editor",
+      "location": "http://www.epes.es/wp-content/plugins/cred-frontend-editor/",
+      "latest_version": null,
+      "last_updated": null,
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": null
+    },
+    "indeed-social-media": {
+      "slug": "indeed-social-media",
+      "location": "http://www.epes.es/wp-content/plugins/indeed-social-media/",
+      "latest_version": null,
+      "last_updated": null,
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": null
+    },
+    "js_composer": {
+      "slug": "js_composer",
+      "location": "http://www.epes.es/wp-content/plugins/js_composer/",
+      "latest_version": "6.7.0",
+      "last_updated": "2021-07-07T11:50:24.000Z",
+      "outdated": true,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Body Tag (Passive Detection)",
+      "confidence": 40,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "5.5.2",
+        "confidence": 60,
+        "found_by": "Body Tag (Passive Detection)",
+        "interesting_entries": [
+          "http://www.epes.es/, Match: 'js-comp-ver-5.5.2'"
+        ],
+        "confirmed_by": {
+
+        }
+      }
+    },
+    "LayerSlider": {
+      "slug": "LayerSlider",
+      "location": "http://www.epes.es/wp-content/plugins/LayerSlider/",
+      "latest_version": null,
+      "last_updated": null,
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 100,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+        "Meta Generator (Passive Detection)": {
+          "confidence": 40,
+          "interesting_entries": [
+
+          ]
+        }
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "6.7.6",
+        "confidence": 90,
+        "found_by": "Query Parameter (Passive Detection)",
+        "interesting_entries": [
+          "http://www.epes.es/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.7.6",
+          "http://www.epes.es/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.7.6",
+          "http://www.epes.es/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.7.6"
+        ],
+        "confirmed_by": {
+          "Meta Generator (Passive Detection)": {
+            "confidence": 60,
+            "interesting_entries": [
+              "http://www.epes.es/, Match: 'Powered by LayerSlider 6.7.6 -'"
+            ]
+          }
+        }
+      }
+    },
+    "responsive-lightbox": {
+      "slug": "responsive-lightbox",
+      "location": "http://www.epes.es/wp-content/plugins/responsive-lightbox/",
+      "latest_version": "2.3.2",
+      "last_updated": "2021-02-19T12:31:00.000Z",
+      "outdated": true,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "2.0.5",
+        "confidence": 100,
+        "found_by": "Query Parameter (Passive Detection)",
+        "interesting_entries": [
+          "http://www.epes.es/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.0.5"
+        ],
+        "confirmed_by": {
+          "Readme - Stable Tag (Aggressive Detection)": {
+            "confidence": 80,
+            "interesting_entries": [
+              "http://www.epes.es/wp-content/plugins/responsive-lightbox/readme.txt"
+            ]
+          },
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "http://www.epes.es/wp-content/plugins/responsive-lightbox/readme.txt"
+            ]
+          }
+        }
+      }
+    },
+    "search-filter": {
+      "slug": "search-filter",
+      "location": "http://www.epes.es/wp-content/plugins/search-filter/",
+      "latest_version": "1.2.14",
+      "last_updated": "2021-05-24T10:48:00.000Z",
+      "outdated": true,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "1.2.10",
+        "confidence": 100,
+        "found_by": "Readme - Stable Tag (Aggressive Detection)",
+        "interesting_entries": [
+          "http://www.epes.es/wp-content/plugins/search-filter/readme.txt"
+        ],
+        "confirmed_by": {
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "http://www.epes.es/wp-content/plugins/search-filter/readme.txt"
+            ]
+          }
+        }
+      }
+    },
+    "types": {
+      "slug": "types",
+      "location": "http://www.epes.es/wp-content/plugins/types/",
+      "latest_version": "2.3.5",
+      "last_updated": "2018-12-07T15:43:00.000Z",
+      "outdated": true,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "2.3.4",
+        "confidence": 100,
+        "found_by": "Readme - Stable Tag (Aggressive Detection)",
+        "interesting_entries": [
+          "http://www.epes.es/wp-content/plugins/types/readme.txt"
+        ],
+        "confirmed_by": {
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "http://www.epes.es/wp-content/plugins/types/readme.txt"
+            ]
+          }
+        }
+      }
+    },
+    "ubermenu": {
+      "slug": "ubermenu",
+      "location": "http://www.epes.es/wp-content/plugins/ubermenu/",
+      "latest_version": null,
+      "last_updated": null,
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": null
+    },
+    "wp-views": {
+      "slug": "wp-views",
+      "location": "http://www.epes.es/wp-content/plugins/wp-views/",
+      "latest_version": null,
+      "last_updated": null,
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": null
+    }
+  },
+  "config_backups": {
+
+  },
+  "vuln_api": {
+    "error": "No WPScan API Token given, as a result vulnerability data has not been output.\nYou can get a free API token with 25 daily requests by registering at https://wpscan.com/register"
+  },
+  "stop_time": 1630407816,
+  "elapsed": 15,
+  "requests_done": 214,
+  "cached_requests": 6,
+  "data_sent": 54760,
+  "data_sent_humanised": "53.477 KB",
+  "data_received": 820683,
+  "data_received_humanised": "801.448 KB",
+  "used_memory": 230797312,
+  "used_memory_humanised": "220.105 MB"
+}

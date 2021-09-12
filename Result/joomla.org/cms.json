@@ -1,0 +1,200 @@
+{
+    "cms_id": "joom",
+    "cms_name": "joomla",
+    "cms_url": "https://joomla.org",
+    "detection_param": "generator",
+    "joomla_backup_files": "https://www.joomla.org/administrator,https://www.joomla.org/admin,",
+    "joomla_debug_mode": "disabled",
+    "joomla_version": "2.5",
+    "last_scanned": "2021-09-01 18:13:55.533193",
+    "url": "https://joomla.org",
+    "vulnerabilities": [
+        {
+            "name": "Joomla! 'redirect.php' SQL Injection Vulnerability",
+            "references": [
+                "EDB : https://www.exploit-db.com/exploits/36913/"
+            ]
+        },
+        {
+            "name": "Joomla! 2.5.0 < 2.5.1 - Time Based SQL Injection",
+            "references": [
+                "EDB : https://www.exploit-db.com/exploits/18618/"
+            ]
+        },
+        {
+            "name": "Joomla! 'highlight.php' PHP Object Injection",
+            "references": [
+                "CVE : CVE-2013-1453",
+                "EDB : https://www.exploit-db.com/exploits/24551/"
+            ]
+        },
+        {
+            "name": "Joomla! 'remember.php' PHP Object Injection",
+            "references": [
+                "CVE : CVE-2013-3242",
+                "EDB : https://www.exploit-db.com/exploits/25087/"
+            ]
+        },
+        {
+            "name": "Joomla! 1.5 < 3.4.5 - Object Injection Remote Command Execution",
+            "references": [
+                "CVE : CVE-2015-8562",
+                "EDB : https://www.exploit-db.com/exploits/38977/"
+            ]
+        },
+        {
+            "name": "Joomla! 1.0 < 3.4.5 - Object Injection 'x-forwarded-for' Header Remote Code Execution",
+            "references": [
+                "CVE : CVE-2015-8562 , CVE-2015-8566 ",
+                "EDB : https://www.exploit-db.com/exploits/39033/"
+            ]
+        },
+        {
+            "name": "Joomla! Core Remote Privilege Escalation Vulnerability",
+            "references": [
+                "CVE : CVE-2016-9838",
+                "EDB : https://www.exploit-db.com/exploits/41157/"
+            ]
+        },
+        {
+            "name": "Joomla! 1.6/1.7/2.5 privilege escalation vulnerability",
+            "references": [
+                "CVE : CVE-2012-1563",
+                "EDB : https://www.exploit-db.com/exploits/41156/"
+            ]
+        },
+        {
+            "name": "Joomla! Component Akeeba Kickstart - Unserialize Remote Code Execution",
+            "references": [
+                "CVE : CVE-2014-7228",
+                "EDB : https://www.exploit-db.com/exploits/35033/"
+            ]
+        },
+        {
+            "name": "Joomla! 'media.php' Arbitrary File Upload Vulnerability",
+            "references": [
+                "CVE : CVE-2013-5576",
+                "EDB : https://www.exploit-db.com/exploits/27610/"
+            ]
+        },
+        {
+            "name": "Joomla! Clickjacking Security Bypass Vulnerability",
+            "references": [
+                "CVE : CVE-2012-5827",
+                "https://developer.joomla.org/security/news/543-20121101-core-clickjacking.html",
+                "https://developer.joomla.org/security/news/544-20121102-core-clickjacking.html"
+            ]
+        },
+        {
+            "name": "Joomla! Highlighter Plugin Unspecified Cross-Site Scripting Vulnerability",
+            "references": [
+                "CVE : CVE-2013-3267 ",
+                "https://developer.joomla.org/security/86-20130407-core-xss-vulnerability.html"
+            ]
+        },
+        {
+            "name": "Joomla! Security Bypass Vulnerability",
+            "references": [
+                "CVE : CVE-2013-3056",
+                "http://www.securityfocus.com/bid/59490/info"
+            ]
+        },
+        {
+            "name": "Joomla! Information Disclosure Vulnerability",
+            "references": [
+                "CVE : CVE-2013-3057",
+                "http://www.securityfocus.com/bid/59489",
+                "http://developer.joomla.org/security/82-20130402-core-information-disclosure.html"
+            ]
+        },
+        {
+            "name": "Joomla! Unspecified Cross-Site Scripting Vulnerability",
+            "references": [
+                "CVE : CVE-2013-3058",
+                "http://www.securityfocus.com/bid/59483",
+                "http://developer.joomla.org/security/81-20130403-core-xss-vulnerability.html"
+            ]
+        },
+        {
+            "name": "Joomla! Unspecified Cross-Site Scripting Vulnerability",
+            "references": [
+                "CVE : CVE-2013-3059",
+                "https://developer.joomla.org/security/80-20130405-core-xss-vulnerability.html"
+            ]
+        },
+        {
+            "name": "Joomla! Core  Authentication Bypass Vulnerability",
+            "references": [
+                "CVE :CVE-2014-6632",
+                "http://developer.joomla.org/security/594-20140902-core-unauthorised-logins.html"
+            ]
+        },
+        {
+            "name": "Joomla! Core Remote Denial of Service Vulnerability",
+            "references": [
+                "CVE : CVE-2014-7229",
+                "https://developer.joomla.org/security/596-20140904-core-denial-of-service.html"
+            ]
+        },
+        {
+            "name": "Joomla! Open Redirection Vulnerability",
+            "references": [
+                "CVE : CVE-2015-5608",
+                "http://www.securityfocus.com/bid/76496"
+            ]
+        },
+        {
+            "name": "Joomla! Cross Site Request Forgery Vulnerability",
+            "references": [
+                "CVE : CVE-2015-5397",
+                "https://developer.joomla.org/security-centre/618-20150602-core-remote-code-execution.html"
+            ]
+        },
+        {
+            "name": "Joomla! Core Security Bypass Vulnerability",
+            "references": [
+                "CVE : CVE-2015-7859",
+                "https://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html"
+            ]
+        },
+        {
+            "name": "Joomla! Directory Traversal Vulnerability",
+            "references": [
+                "CVE : CVE-2015-8565",
+                "https://developer.joomla.org/security-centre/635-20151214-core-directory-traversal-2.html"
+            ]
+        },
+        {
+            "name": "Joomla! Core Cross Site Request Forgery Vulnerability",
+            "references": [
+                "CVE : CVE-2015-8563",
+                "https://developer.joomla.org/security-centre/633-20151214-core-csrf-hardening.html"
+            ]
+        },
+        {
+            "name": "Joomla! Information Disclosure Vulnerability",
+            "references": [
+                "CVE : CVE-2016-9837",
+                "https://developer.joomla.org/security-centre/666-20161203-core-information-disclosure.html"
+            ]
+        },
+        {
+            "name": "PHPMailer Remote Code Execution Vulnerability",
+            "references": [
+                "CVE : CVE-2016-10033",
+                "https://www.rapid7.com/db/modules/exploit/multi/http/phpmailer_arg_injection",
+                "https://github.com/opsxcq/exploit-CVE-2016-10033",
+                "EDB : https://www.exploit-db.com/exploits/40969/"
+            ]
+        },
+        {
+            "name": "PPHPMailer Incomplete Fix Remote Code Execution Vulnerability",
+            "references": [
+                "CVE : CVE-2016-10045",
+                "https://www.rapid7.com/db/modules/exploit/multi/http/phpmailer_arg_injection",
+                "EDB : https://www.exploit-db.com/exploits/40969/"
+            ]
+        }
+    ],
+    "vulnerabilities_count": "26"
+}

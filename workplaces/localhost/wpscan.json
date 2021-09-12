@@ -1,0 +1,15 @@
+{
+  "banner": {
+    "description": "WordPress Security Scanner by the WPScan Team",
+    "version": "3.8.17",
+    "authors": [
+      "@_WPScan_",
+      "@ethicalhack3r",
+      "@erwan_lr",
+      "@firefart"
+    ],
+    "sponsor": "Sponsored by Automattic - https://automattic.com/"
+  },
+  "scan_aborted": "The url supplied 'http://localhost:9991/' seems to be down (Timeout was reached)",
+  "target_url": "http://localhost:9991/"
+}

@@ -1,0 +1,117 @@
+{% load static %}
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Reporte</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+</head>
+
+<main>
+
+
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <a href="#Golismero"></a>
+    <h6 class="border-bottom pb-2 mb-0">Golismero - Web Application Vulnerability Scanner</h6>
+    <p></p>
+    <h6 class="border-bottom pb-2 mb-0">Vulnerabilidades encontradas</h6>
+    {% if Golismero_resources or Golismero_resources_web %}
+    {% if Golismero_resources %}
+    {% for i,j,k,l in Golismero_resources %}
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Titulo: {{ i }}</strong>
+
+        </div>
+        <span class="d-block">Descripcion: {{j}}</span>
+        <span class="d-block">CVSS: {{k}}</span>
+        <span class="d-block">Solucion: {{l}}</span>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if Golismero_resources_web %}
+    {% for i,j,k,l,m in Golismero_resources_web %}
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Titulo: {{ i }}</strong>
+
+        </div>
+        <span class="d-block">Descripcion: {{k}}</span>
+        <span class="d-block">Evidencia: {{j}}</span>
+        <span class="d-block">CVSS: {{l}}</span>
+        <span class="d-block">Solucion: {{m}}</span>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% else %}
+    <div class="d-flex text-muted pt-3">
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">El host que intenta escanear no se encuentra activo o no tiene ningun pruerto
+            activo en este momento</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endif%}
+
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  </script>
+  <script src="{% static 'js/dashboard.js' %}"></script>
+</main>
+
+</html>

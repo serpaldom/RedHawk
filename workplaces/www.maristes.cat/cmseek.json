@@ -1,0 +1,8 @@
+{
+    "cms_id": "dru",
+    "cms_name": "Drupal",
+    "cms_url": "https://drupal.org",
+    "detection_param": "header",
+    "last_scanned": "2021-09-01 18:17:44.146960",
+    "url": "https://www.maristes.cat"
+}

