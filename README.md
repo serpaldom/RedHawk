@@ -33,9 +33,5 @@ CMSeeK
 Nmap
 
 ### Installation 🔧
-
-TODO
-
-## Demo ⚙️
-
-TODO
+Install all requirements with pip -r requirements.txt and enjoy!
+Check readme.txt
